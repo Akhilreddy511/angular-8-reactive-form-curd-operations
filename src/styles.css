@@ -1,0 +1,10 @@
+/* Add application styles & imports to this file! */
+
+body{
+  background-color:white;
+  font-family: Rockwell, Georgia, serif;
+    max-width: 1000px;
+  width:90%;
+  margin: 0 auto;
+  box-shadow: 4px 4px 8px rgba(0,0,0.15)
+}
