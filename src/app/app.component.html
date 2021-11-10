@@ -1,6 +1,6 @@
 <h1>Reactive Contact Form Example</h1>
 
-<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+<form [formGroup]="contactForm" >
   <input
     type="text"
     name="fullName"
@@ -23,7 +23,14 @@
     formControlName="message"
   ></textarea>
   <br />
-  <input type="submit" value="Submit" />
+
+  <div *ngIf=!isUpdated>
+  <input type="submit"(click)="onSubmit()" value="Submit" />
+  </div>
+  <div *ngIf=isUpdated>
+<button (click)="onSubmit()">update</button>
+  </div>
+
 </form>
 
 <table style="border:2px solid">
