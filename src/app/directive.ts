@@ -46,3 +46,31 @@ export class SSNMaskDirective {
     return this.actualValue;
   }
 }
+
+// @Input() ssnMask: boolean = false;
+// @ViewChild(SSNMaskDirective) ssnDirective?: SSNMaskDirective;
+
+// toggleShow() {
+//   this.show = !this.show;
+//   this.ssnDirective?.toggleShow(this.show);
+// }
+
+// <input
+//   class="form-control"
+//   [type]="'text'"
+//   (input)="onInput($event)"
+//   [ssnMask]="ssnMask"
+//   [show]="show"
+// />
+// <a *ngIf="ssnMask" class="toggle-link" (click)="toggleShow()">
+//   {{ show ? 'Hide' : 'Show' }}
+// </a>
+
+// <app-input-field
+//   label="Social Security Number"
+//   formControlName="ssn"
+//   [mask]="true"
+//   [ssnMask]="true"
+//   [numbersOnly]="true"
+//   ...
+// ></app-input-field>
